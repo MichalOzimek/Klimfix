@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NS8ZMRV');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="index" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimfix - serwis klimatyzacji samochodowej</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style css/style.css">
+
+    <!-- GOOGLE FONTS -->
+    <!-- Days One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- MITR -->
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FACIVON -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script src="https://kit.fontawesome.com/c0530259e1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS8ZMRV" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- NAVIGATION -->
+    <nav class="navigation navHid">
+
+        <!-- LOGO -->
+        <a href="#" style="display: flex; align-items: center;">
+            <img src="img/LOGO POZIOM GRUBE.svg" alt="" class="navigation__logo">
+        </a>
+
+        <!-- NAV DEKSTOP > 1100PX -->
+        <div class="navigation__btn-burger">
+            <a href="#Uslugi_i_cennik" class="nav__name invisible visible1100P">
+                USŁUGI I CENNIK
+            </a>
+            <a href="#FAQ" class="nav__name invisible visible1100P">
+                FAQ
+            </a>
+            <a href="#Lokalizacja" class="nav__name invisible visible1100P">
+                LOKALIZACJE
+            </a>
+            <a href="#Kontakt" class="nav__name invisible visible1100P">
+                KONTAKT
+            </a>
+            <!-- zadzwoń teraz DESKTOP -->
+            <div class="dropdown invisible visible1100P-btn">
+                <a class="btn btn--dark">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Zadzwon teraz</span>
+                </a>
+                <ul>
+                    <a href="tel:+48531086370">
+                        <li>+48 531 086 370</li>
+                    </a>
+                    <a href="tel:+48534520569">
+                        <li>+48 534 520 569</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- wyznacz trasę DESKTOP -->
+            <div class="dropdown invisible visible1100P-btn">
+                <a class="btn btn--dark">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>Wyznacz trasę</span>
+                </a>
+                <ul>
+                    <a href="https://goo.gl/maps/kq1BjRYZ2jhL5ryG8" target="_blank">
+                        <li class="dropdown__trasa-li">
+                            <b>Rzeszów, <br>
+                                Krakowska 20</b> <br>
+                            Pod galerią nowy świat
+                        </li>
+                    </a>
+                    <a href="https://goo.gl/maps/1DotXyyz8jmjHh1L6" target="_blank">
+                        <li class="dropdown__trasa-li">
+                            <b>Rzeszów, <br>
+                                Podwisłocze 30</b> <br>
+                            Przy sklepie Delikatesy Centrum
+                        </li>
+                    </a>
+                    <a href="https://goo.gl/maps/nTYFwdsmfovGi9Nx9" target="_blank">
+                        <li class="dropdown__trasa-li">
+                            <b>Tyczyn, <br>
+                                Orkana 1</b> <br>
+                            Przy sklepie Unimet
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <!-- NAV btn TABLET -->
+            <button class="btn btn--dark btn--nav invisible telefonNav2">
+                <i class="fa-solid fa-phone"></i>
+                Zadzwoń teraz
+            </button>
+            <button class="btn btn--dark btn--nav invisible trasaHome2">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                Wyznacz trasę
+            </button>
+
+            <!-- NAV MOBILE -->
+            <!-- NAV menu hamburger MOBILE -->
+            <div class="menu-btn">
+                <div class="menu-btn__burger invisible1100P"></div>
+            </div>
+        </div>
+
+        <!-- NAV MOBILE-->
+        <div id="nav" class="nav invisible1100P">
+            <ul>
+                <a href="#Uslugi_i_cennik">
+                    <li class="menu-btn-li">Usługi i cennik</li>
+                </a>
+                <a href="#FAQ">
+                    <li class="menu-btn-li">FAQ</li>
+                </a>
+                <a href="#Lokalizacja">
+                    <li class="menu-btn-li">Lokalizacje</li>
+                </a>
+                <a href="#Kontakt">
+                    <li class="menu-btn-li">Kontakt</li>
+                </a>
+            </ul>
+            <div>
+                <button class="btn trasaNav">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    Wyznacz trasę
+                </button>
+                <button class="btn telefonNav">
+                    <i class="fa-solid fa-phone"></i>
+                    Zadzwoń teraz
+                </button>
+            </div>
+        </div>
+
+        <!-- NAV TRASA MOBILE-->
+        <div class="navigation__trasa invisible1100P">
+            <div>
+                <h1 class="navigation__trasa-title">Nawiguj do:</h1>
+                <div class="navigation__trasa-item">
+                    <a href="https://goo.gl/maps/kq1BjRYZ2jhL5ryG8" target="_blank">
+                        <p><b>Rzeszów, Krakowska 20</b><br>
+                            Pod galerią Nowy Świat</p>
+                    </a>
+                </div>
+                <div class="navigation__trasa-item">
+                    <a href="https://goo.gl/maps/1DotXyyz8jmjHh1L6" target="_blank">
+                        <p><b>Rzeszów, Podwisłocze 30</b> <br>
+                            Przy sklepie delikatesy centrum</p>
+                    </a>
+                </div>
+                <div class="navigation__trasa-item">
+                    <a href="https://goo.gl/maps/nTYFwdsmfovGi9Nx9" target="_blank">
+                        <p><b>Tyczyn, Orkana 1</b><br>
+                            Przy sklepie Unimet</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV TELEFON MOBILE-->
+        <div class="navigation__telefon invisible1100P">
+            <div>
+                <h1 class="navigation__telefon-title">Zadzwoń <br> na numer:</h1>
+                <div class="navigation__telefon-item">
+                    <p>
+                        <a href="tel:+48531086370">+48 531 086 370</a>
+                    </p>
+                </div>
+                <div class="navigation__telefon-item">
+                    <p>
+                        <a href="tel:+48534520569">+48 534 520 569</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- HOME -->
+        <section class="home">
+            <div class="car">
+                <div class="container">
+                    <div class="home__icons">
+                        <img src="img/Ikona sniezynki.png" alt="" class="home__icons-icon">
+                        <img src="img/Ikona odkurzacza.png" alt="" class="home__icons-icon">
+                        <img src="img/Ikona samochodu.png" alt="" class="home__icons-icon">
+                        <img src="img/Ikona polerki.png" alt="" class="home__icons-icon">
+                    </div>
+                    <div class="">
+                        <h1>
+                            <span class="blueLineVer invisible visibleTablet"></span>Serwis klimatyzacji
+                        </h1>
+                        <h5>
+                            (czynnik R134a, odgrzybianie)
+                        </h5>
+                        <h1 class="home_title">
+                            <span class="blueLineVer invisible visibleTablet"></span>
+                            Pielęgnacja samochodowa
+                        </h1>
+                    </div>
+                </div>
+                <!-- HOME AUTO -->
+                <div class="home_img-car invisibleTablet visible1100P">
+                    <img src="img/auto_klima_rzeszow_tyczyn.png" alt="">
+                </div>
+            </div>
+            <div class="btn-mobile invisibleTablet">
+                <button class="btn trasaHome">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    Wyznacz trasę
+                </button>
+                <button class="btn telefonHome">
+                    <i class="fa-solid fa-phone"></i>
+                    Zadzwoń teraz
+                </button>
+            </div>
+            <!-- HOME SLIDER -->
+            <div class="container invisible visibleTablet">
+                <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel"
+                    data-interval="3500">
+                    <div class="slider__title">
+                        <div class="arrow__left">
+                            <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span aria-hidden="true">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span aria-hidden="true">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>
+                                Odwiedź nas w najbliższym punkcie! <br> Znajdziesz nas w Rzeszowie i Tyczynie.
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>
+                                Przygotuj się na lato z KlimFix! <br> Zapewnij sobie komfort jazdy w czystym samochodzie
+                                i w
+                                odpowiedniej temperaturze.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <div class="about__content">
+                <div id="carouselExampleIndicators" class="carousel slide slider invisibleTablet" data-ride="carousel"
+                    data-interval="3500">
+                    <div class="slider__title">
+                        <div class="arrow__left">
+                            <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span aria-hidden="true">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <div>
+                            <h2>Informacje</h2>
+                        </div>
+                        <div>
+                            <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span aria-hidden="true">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blueLine"></div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>
+                                Odwiedź nas w najbliższym punkcie! Znajdziesz nas w Rzeszowie i Tyczynie.
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>
+                                Przygotuj się na lato z KlimFix! Zapewnij sobie komfort jazdy w czystym samochodzie i w
+                                odpowiedniej temperaturze.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TEKST ABOUT -->
+                <div class="row container about__content">
+                    <div class="about__img col-md-6">
+                        <img src="img/nabijanie_klimatyzacji_w_samochodzie_klima.png" alt="">
+                    </div>
+                    <div class="about__text col-md-6">
+                        <h2>Co robimy?</h2>
+                        <p>Oferujemy serwis klimatyzacji samochodowej (potocznie nazwywany “nabijaniem klimatyzacji”)
+                            oraz
+                            pielęgnację samochodową w zakresie sprzątania wnętrza auta w Rzeszowie i Tyczynie. Pracujemy
+                            na
+                            układach z czynnikiem R134a, sprawdzamy szczelność, ozonujemy. Profesjonalnie dbamy o
+                            czystość
+                            samochodu.</p>
+                        <div class="dropdown invisible visible1100P-btn mr-20">
+                            <a class="btn btn--dark">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Zadzwon teraz</span>
+                            </a>
+                            <ul>
+                                <a href="tel:+48531086370">
+                                    <li>+48 531 086 370</li>
+                                </a>
+                                <a href="tel:+48534520569">
+                                    <li>+48 534 520 569</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Uslugi_i_cennik"></div>
+        </section>
+
+        <!-- CENNIK -->
+        <section class="priceList">
+            <div class="priceList__title">
+                <div class="blueLine"></div>
+                <h2>USŁUGI I CENNIK</h2>
+            </div>
+            <div class="row container">
+                <!-- USŁUGA 1 -->
+                <div class="priceList__price col-lg-6">
+                    <div class="priceList__price-title">
+                        <img class="priceList__img" src="/img/cennik klimatyzacja samochodowa serwis rzeszow tyczyn.png"
+                            alt="">
+                        <h3>SERWIS <br> KLIMATYZACJI</h3>
+                    </div>
+                    <div class="priceList__price-price">
+                        <div>
+                            <div class="price-item" style="margin-top: 0; color: #00C9FF;">
+                                <h6>Usługa serwisowa dla czynnika R134a</h6>
+                                <h6>160&nbsp;ZŁ</h6>
+                            </div>
+                            <div>
+                                <p class="price-item-uwagi">(napełnianie układu do 300g czynnika, <br>
+                                    sprawdzenie szczelności, odgrzybianie)</p>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <ul>
+                                <li>
+                                    <h6>Każde następne 10-100g czynnika</h6>
+                                </li>
+                            </ul>
+                            <h6>20&nbsp;ZŁ</h6>
+                        </div>
+                        <div>
+                            <div class="price-item" style="color: #00C9FF;">
+                                <h6>Usługa serwisowa dla czynnika R1234yf</h6>
+                                <h6>140&nbsp;ZŁ</h6>
+                            </div>
+                            <div>
+                                <p class="price-item-uwagi">(sprawdzenie szczelności, ozonowanie)</p>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <ul>
+                                <li>
+                                    <h6>Każde następne 10-100g czynnika</h6>
+                                </li>
+                            </ul>
+                            <h6>60&nbsp;ZŁ</h6>
+                        </div>
+                        <div class="price-item">
+                            <h6>Wymiana zaworka</h6>
+                            <h6>20&nbsp;ZŁ</h6>
+                        </div>
+                        <div class="price-item">
+                            <h6>Wymiana filtra kabinowego</h6>
+                            <h6>20&nbsp;ZŁ</h6>
+                        </div>
+                        <div class="price-item">
+                            <h6>Ozonowanie/odgrzybianie</h6>
+                            <h6>50&nbsp;ZŁ</h6>
+                        </div>
+                        <div class="price-item">
+                            <h6>Sprawdzanie szczelności</h6>
+                            <h6>60&nbsp;ZŁ</h6>
+                        </div>
+                        <p class="price-item-uwagi2">W sytuacji rozszczelnienia układu w terminie od 1 do 30 dni od
+                            wykonania usługi (po usunięciu usterki nieszczelności we własnym zakresie) napełniamy układ
+                            w cenie 60zł bez względu na ilość czynnika (po zwróceniu wydruku z maszyny. Paragon lub
+                            faktura nie jest akceptowana.
+                        </p>
+                    </div>
+                </div>
+                <!-- USLUGA 2 -->
+                <div class="priceList__price col-lg-6">
+                    <div class="priceList__price-title">
+                        <img class="priceList__img" src="/img/priceList_img2.png" alt="">
+                        <h3>PIELĘGNACJA<br> SAMOCHODOWA</h3>
+                    </div>
+                    <div class="priceList__price-price">
+                        <div>
+                            <div class="price-item" style="margin-top: 0;">
+                                <h6>Pakiet sprzątania wnętrza auta</h6>
+                                <h6>od&nbsp;50&nbsp;ZŁ</h6>
+                            </div>
+                            <div>
+                                <p class=" price-item-uwagi">(odkurzanie, czyszczenie plastików, <br> mycie szyb,
+                                    czyszczenie
+                                    dywaników)</p>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <h6>Odkurzanie i czyszczenie dywaników</h6>
+                            <h6>od&nbsp;30&nbsp;ZŁ</h6>
+                        </div>
+                        <div class="price-item">
+                            <h6>Mycie szyb</h6>
+                            <h6>od&nbsp;20&nbsp;ZŁ</h6>
+                        </div>
+                        <div class="price-item">
+                            <h6>Czyszczenie plastików</h6>
+                            <h6>od&nbsp;10&nbsp;ZŁ</h6>
+                        </div>
+                        <p class="price-item-uwagi2">Cena zależna jest od typu pojazdu (osobowe, SUV, VAN, crossover)
+                            oraz stopnia zabrudzenia (sierść, błoto itp.). Opłata jest wyceniana indywidualnie.</p>
+                        <p class="price-item-uwagi2">Nie ponosimy odpowiedzialności za rzeczy pozostawione w aucie..</p>
+                    </div>
+                </div>
+            </div>
+            <div id="FAQ"></div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq container" id="maincontent">
+            <div>
+                <h2 class="faq__title">FAQ</h2>
+            </div>
+            <section id="accordion">
+                <!-- FAQ 1 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-1" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-1" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Co wchodzi w zakres usługi serwisowej klimatyzacji?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-1">
+                        <div>
+                            <p>
+                                Sprawdzenie szczelności klimatyzacji
+                                Osuszenie układu klimatyzacji
+                                Uzupełnienie czynnika chłodniczego do 300g.
+                                Napełnienie układu świeżym olejem
+                                Sprawdzenie wydajności układu chłodzenia
+                                Odgrzybienie układu klimatyzacji.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-2" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-2" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Jak długo trwa usługa?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-2">
+                        <div>
+                            <p>
+                                Usługa serwisowa klimatyzacji, podobnie jak cały pakiet sprzątania, trwają ok. 1 godz.
+                                Ozonowanie zajmuje 20-30 min.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-3" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-3" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Co mogę robić w trakcie trwania usługi?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-3">
+                        <div>
+                            <p>
+                                Nasze punkty znajdują się blisko sklepów, więc w trakcie trwania usługi możesz zrobić
+                                np. zakupy. Możesz też wybrać się na spacer do pobliskiego parku. W tym czasie my
+                                zajmiemy się Twoim samochodem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-4" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-4" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Czy muszę rezerwować wizytę?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-4">
+                        <div>
+                            <p>
+                                Nie. Jednak jeśli chcesz być pewnym, że zostaniesz obsłużony w dogodnym dla Ciebie
+                                czasie, zachęcamy do rezerwacji.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-5" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-5" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Jak sprawdzić jaki czynnik mam w aucie?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-5">
+                        <div>
+                            <p>
+                                Auta od roku produkcji 2017 działają na nowym czynniku - R1234yf. Większość starszych
+                                aut działa na czynniku R134a. Aby się upewnić wystarczy pod maską sprawdzić informację o
+                                czynniku na naklejce.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 6 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-6" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-6" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Jak pozbyć się nieprzyjemnego zapachu w aucie?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-6">
+                        <div>
+                            <p>
+                                Nieprzyjemnego zapachu w aucie można pozbyć się dzięki ozonowaniu. Pomaga usunąć
+                                wszelkie zapachy, nawet dym papierosowy. Ponadto dezynfekuje i czyści klimatyzację.
+                                Niestety przy bardzo dużym zagrzybieniu układu klimatyzacji ratunkiem może okazać się
+                                jedynie czyszczenie mechaniczne odpowiednią chemią.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 7 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-7" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-7" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Jak często wykonywać serwis klimatyzacji samochodowej?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-7">
+                        <div>
+                            <p>
+                                Serwis klimatyzacji samochodowej należy wykonywać raz w roku, w celu osuszenia układu
+                                oraz jego odgrzybienia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 8 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-8" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-8" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Co to jest ozonowanie?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-8">
+                        <div>
+                            <p>
+                                Ozonowanie dezynfekuje bakterie, wirusy i grzyby oraz usuwa niepożądane zapachy w
+                                obrębie wnętrza samochodu oraz układu klimatyzacji. Dzięki ozonowaniu pozbywamy się
+                                również potencjalnych alergenów. Przy ozonowaniu warto pomyśleć także o wysprzątaniu
+                                wnętrza samochodu. Zabieg najlepiej wykonać w okresie wiosenno-letnim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Lokalizacja"></div>
+                <!-- FAQ 9 -->
+                <div>
+                    <a class="faq__item" aria-controls="faq-9" aria-expanded="false" data-toggle="collapse"
+                        href="#faq-9" role="button">
+                        <div class="faq__item-title">
+                            <h4>
+                                Czy naprawiamy zepsute układy?
+                            </h4>
+                            <div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="faq-9">
+                        <div>
+                            <p>
+                                Niestety nie. W razie wykrycia usterki, skierujemy Cię do odpowiednich specjalistów, z
+                                którymi współpracujemy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- LOKALIZACJA -->
+        <section class="lokalizacja">
+            <div class="container">
+                <h2>LOKALIZACJE</h2>
+
+                <!-- LOKALIZACJA 1 KRAKOWSKA -->
+                <div class="lokalizacja__item row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="lokalizacja__item-text">
+                            <div>
+                                <h4>Rzeszów</h4>
+                                <h4>ul. Krakowska 20</h4>
+                                <p>Pod galerią Nowy Świat</p>
+                            </div>
+                            <div class="lokalizacja__item-hours">
+                                <p>Godziny otwarcia:</p>
+                                <p>pon - sob 9:00 - 18:00</p>
+                                <p>niedziela nieczynne</p>
+                            </div>
+                            <a href="https://goo.gl/maps/kq1BjRYZ2jhL5ryG8" target="_blank">
+                                <button class="btn btn--dark visibleTablet invisible">
+                                    <i class="fa-solid fa-location-crosshairs"></i>
+                                    Wyznacz trasę
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lokalizacja__item-img col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/Klimatyzacja Rzeszów Nabijanie klimatyzacji Krakowska.jpg" alt=""
+                            style="width: 100%;">
+                    </div>
+                    <div class="lokalizacja__item-map col-md-12 col-lg-4 col-xl-5">
+                        <iframe class="lokalizacja__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10250.428133585454!2d21.98248894562489!3d50.0374588527412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfb8a40c2a7e3%3A0x590a4031468e9720!2sKlimFix%20Serwis%20klimatyzacji%20samochodowej!5e0!3m2!1spl!2spl!4v1652933027997!5m2!1spl!2spl"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="lokalizacja__item-btn invisibleTablet">
+                        <a href="https://goo.gl/maps/kq1BjRYZ2jhL5ryG8" target="_blank">
+                            <button class="btn btn--dark">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                                Wyznacz trasę
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LOKALIZACJA 2 PODWISŁOCZE -->
+                <div class="lokalizacja__item row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="lokalizacja__item-text">
+                            <div>
+                                <h4>Rzeszów</h4>
+                                <h4>ul. Podwisłocze 30</h4>
+                                <p>Przy sklepie Delikatesy Centrum</p>
+                            </div>
+                            <div class="lokalizacja__item-hours">
+                                <p>Godziny otwarcia:</p>
+                                <p>pon - sob 9:00 - 18:00</p>
+                                <p>niedziela nieczynne</p>
+                            </div>
+                            <a href="https://goo.gl/maps/1DotXyyz8jmjHh1L6" target=" _blank">
+                                <button class="btn btn--dark visibleTablet invisible">
+                                    <i class="fa-solid fa-location-crosshairs"></i>
+                                    Wyznacz trasę
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lokalizacja__item-img col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/Klimatyzacja Rzeszów Nabijanie klimatyzacji Podwisłocze.jpg" alt=""
+                            style="width: 100%;">
+                    </div>
+                    <div class="lokalizacja__item-map col-md-12 col-lg-4 col-xl-5">
+                        <iframe class="lokalizacja__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.208708379118!2d22.004511015933033!3d50.02618492572453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfb1ca9e2e011%3A0xdc57d84b6de8d73f!2sKlimFix%20Serwis%20klimatyzacji%20samochodowej!5e0!3m2!1spl!2spl!4v1652933109600!5m2!1spl!2spl"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="lokalizacja__item-btn invisibleTablet">
+                        <a href="https://goo.gl/maps/1DotXyyz8jmjHh1L6" target="_blank">
+                            <button class="btn btn--dark">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                                Wyznacz trasę
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LOKALIZACJA 3 TYCZYN -->
+                <div class="lokalizacja__item row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="lokalizacja__item-text">
+                            <div>
+                                <h4>Tyczyn</h4>
+                                <h4>ul. Orkana 1</h4>
+                                <p>Przy sklepie Unimet</p>
+                            </div>
+                            <div class="lokalizacja__item-hours">
+                                <p>Godziny otwarcia:</p>
+                                <p>pon - sob 9:00 - 18:00</p>
+                                <p>niedziela nieczynne</p>
+                            </div>
+                            <a href="https://goo.gl/maps/nTYFwdsmfovGi9Nx9" target="_blank">
+                                <button class="btn btn--dark visibleTablet invisible">
+                                    <i class="fa-solid fa-location-crosshairs"></i>
+                                    Wyznacz trasę
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lokalizacja__item-img col-md-6 col-lg-4 col-xl-4">
+                        <img src="img/Klimatyzacja Tyczyn Nabijanie klimatyzacji Orkana.jpg" alt=""
+                            style="width: 100%;">
+                    </div>
+                    <div class="lokalizacja__item-map col-md-12 col-lg-4 col-xl-5">
+                        <iframe class="lokalizacja__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10265.511182827646!2d22.0288779!3d49.9667732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf593dd6b0c597b71!2sKlimFix%20Serwis%20klimatyzacji%20samochodowej!5e0!3m2!1spl!2spl!4v1654602011495!5m2!1spl!2spl"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="lokalizacja__item-btn invisibleTablet">
+                        <a href="https://goo.gl/maps/nTYFwdsmfovGi9Nx9" target="_blank">
+                            <button class="btn btn--dark">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                                Wyznacz trasę
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TEKST SEO -->
+        <section class="container">
+            <div class="seo">
+                <h3 class="seo__title">Profesjonalna obsługa blisko Ciebie</h3>
+                <p>Zapewnij sobie komfort jazdy w upalne dni i pozbądź się nieprzyjemnych zapachów. Zadbaj jak najlepiej
+                    o
+                    swoje auto.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="Kontakt" class="contact row-full">
+        <div class="container">
+            <div class="contact__title">
+                <h2>KONTAKT</h2>
+            </div>
+            <!-- CONTACT -->
+            <div class="row">
+                <!-- TELEFON/POCZTA -->
+                <div class="contact__items col-sm-6 col-lg-3">
+                    <h5>Dane kontaktowe</h5>
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="img/phone_icon.svg" alt="">
+                        </div>
+                        <div>
+                            <p>+48 531 086 370</p>
+                            <p>+48 534 520 569</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="img/mail_icon.svg" alt="">
+                        </div>
+                        <div>
+                            <a href="mailto: kontakt.klimfix@gmail.com">
+                                <p>kontakt.klimfix@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- LOKALIZACJA -->
+                <div class="contact__items  col-sm-6 col-lg-3">
+                    <h5>Lokalizacje</h5>
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="img/lokalization_footer_icon.svg" alt="">
+                        </div>
+                        <div>
+                            <p>
+                                Rzeszów Krakowska&nbsp;20 <br>
+                                35-111 Rzeszów
+                            </p>
+                            <p>
+                                Rzeszów Podwisłocze&nbsp;30 <br>
+                                35-109 Rzeszów
+                            </p>
+                            <p>
+                                <a href="https://goo.gl/maps/439HBf9aiajHhaYj8">
+                                    Tyczyn Orkana&nbsp;1 <br>
+                                    36-020 Tyczyn
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- SOCIAL MEDIA -->
+                <div class="contact__items  col-sm-6 col-lg-3">
+                    <h5>Social Media</h5>
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="img/fb_icon.svg" alt="">
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/serwisklimfix" target="_blank">
+                                <p>facebook.com/serwisklimfix</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__item-img">
+                            <img src="img/instagram_icon.svg" alt="">
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/serwis_klimfix/" target="_blank">
+                                <p>@serwis_klimfix</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- LOGO -->
+                <div class="contact__logo col-sm-6 col-lg-3">
+                    <img src="img/LOGO PION CHUDE.svg" class="contact__logo-img" alt="">
+                </div>
+            </div>
+            <div class="grayLine"></div>
+            <!-- AUTHORS -->
+            <div class="contact__authors row">
+                <div>
+                    <p>Klimfix 2022</p>
+                    <p>Polityka prywatności</p>
+                </div>
+                <div>
+                    <a href="https://www.behance.net/dariapyziakdesign" target="_blank">
+                        <p>Projekt strony: Daria Pyziak</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/micha%C5%82-ozimek-09a21b233/" target="_blank">
+                        <p>Code: Michał Ozimek</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"> </script>
+    <script src="scripts/animation.js"></script>
+</body>
+
+</html>
